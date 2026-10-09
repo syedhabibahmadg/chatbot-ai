@@ -1,112 +1,170 @@
-<div align="center">
-  <img src="https://avatars.githubusercontent.com/u/173460560?v=4" width="180" height="180" alt="avatar" style="border-radius: 50%; border: 4px solid #ffffff; background: #fff;" />
-</div>
+# Chatbot AI
 
-<h1 align="center">Hafiz Syed Habib Ahmad Gillani</h1>
-<p align="center"><b>syedhabibahmadg</b></p>
+A modern AI-powered web application built with Next.js, designed for secure authentication, protected dashboards, and intelligent chatbot interactions. The app supports user login via credentials, Google, and Facebook, and includes a Gemini-powered chat experience with OCR support for uploaded document images.
 
-<p align="center">
-  <a href="https://github.com/syedhabibahmadg"><img src="https://img.shields.io/badge/Follow-@syedhabibahmadg-181717?style=for-the-badge&logo=github" alt="Follow" /></a>
-</p>
+## Features
 
-<p align="center">
-  <i>Computer Science graduate from UET Lahore | AI Developer | Software Engineer</i>
-</p>
+- NextAuth authentication with:
+  - Email/password login
+  - Google OAuth
+  - Facebook OAuth
+- Protected user dashboard and admin routes
+- Prisma + MySQL data model for user records and accounts
+- AI chat interface using Google Generative AI
+- OCR-based image processing using Tesseract.js
+- Tailwind CSS + Chakra UI for responsive UI design
+- Role-based access with admin support
+- Modern Next.js 14 application structure
 
-<div align="center">
-  <img src="https://img.shields.io/badge/AI%20Developer-Portfolio-0A66C2?style=flat-square" alt="AI Developer" />
-  <img src="https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?style=flat-square&logo=prisma" alt="Prisma" />
-</div>
+## Tech Stack
 
-<hr>
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Chakra UI
+- Prisma ORM
+- MySQL
+- NextAuth
+- Google Generative AI
+- Tesseract.js
+- React Markdown
 
-<table>
-  <tr>
-    <td valign="top" width="30%">
+## Project Structure
 
-### About
-
-I build modern AI-powered products, dashboards, and startup experiences with a focus on user value, clean architecture, and scalable engineering.
-
-- Full-stack developer with a passion for AI, automation, and product thinking
-- Interested in startup products, dashboards, and intelligent interfaces
-- Building solutions that are useful, elegant, and production-ready
-
-### Contact
-
-- GitHub: [@syedhabibahmadg](https://github.com/syedhabibahmadg)
-- Email: hafizsyedhabibahmadgillani@gmail.com
-- Location: Lahore, Pakistan
-
-    </td>
-    <td valign="top" width="70%">
-
-### Popular repositories
-
-<table>
-  <tr>
-    <td width="50%">
-      <a href="https://github.com/syedhabibahmadg/chatbot-ai"><b>chatbot-ai</b></a><br>
-      <sub>Public</sub>
-      <br><br>
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/AI-Chatbot-4285F4?style=flat-square" alt="AI Chatbot" />
-    </td>
-    <td width="50%">
-      <a href="https://github.com/syedhabibahmadg/BNB-Ecommerce-Website"><b>BNB-Ecommerce-Website</b></a><br>
-      <sub>Public</sub>
-      <br><br>
-      <img src="https://img.shields.io/badge/HTML-5-E34F26?style=flat-square&logo=html5" alt="HTML" />
-      <img src="https://img.shields.io/badge/Frontend-Ecommerce-0EA5E9?style=flat-square" alt="Frontend" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <a href="https://github.com/syedhabibahmadg/Advanced-RAG-System-with-Multi-Model-Support"><b>Advanced-RAG-System-with-Multi-Model-Support</b></a><br>
-      <sub>Public</sub>
-      <br><br>
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript" alt="JavaScript" />
-      <img src="https://img.shields.io/badge/RAG-AI-8B5CF6?style=flat-square" alt="RAG" />
-    </td>
-    <td width="50%">
-      <a href="https://github.com/syedhabibahmadg/BrainSeg3D-Few-Shot-MRI-Segmentation"><b>BrainSeg3D-Few-Shot-MRI-Segmentation</b></a><br>
-      <sub>Public</sub>
-      <br><br>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python" alt="Python" />
-      <img src="https://img.shields.io/badge/CV-MRI-10B981?style=flat-square" alt="CV" />
-    </td>
-  </tr>
-</table>
-
-<br>
-
-### Contribution activity
-
-```text
-  Oct  Nov  Dec  Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep
-Mon   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░
-Wed   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░
-Fri   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░   ░░░░░
+```bash
+chatbot-ai/
+├── app/
+│   ├── (auth)/
+│   │   ├── auth/
+│   │   ├── reset-password/
+│   │   └── layout.tsx
+│   ├── (landing)/
+│   │   └── page.tsx
+│   ├── admin/
+│   │   ├── hooks/
+│   │   └── page.tsx
+│   ├── api/
+│   │   └── auth/
+│   ├── chat/
+│   │   ├── App.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── dashboard/
+│   │   ├── App.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   └── ChatWithGemini.tsx
+│   ├── hooks/
+│   ├── libs/
+│   ├── utils/
+│   │   ├── authOptions.ts
+│   │   └── ...
+│   ├── config.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── favicon.ico
+├── components/
+├── context/
+├── lib/
+├── prisma/
+│   └── schema.prisma
+├── public/
+├── .env.example
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc.json
+├── components.json
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── readme.gif
+├── tailwind.config.ts
+├── tsconfig.json
+├── LICENSE
+└── README.md
 ```
 
-<p align="center">
-  <img src="https://ghchart.rschm.com/ghchart?user=syedhabibahmadg&theme=github-dark" alt="Contribution chart" />
-</p>
+## Getting Started
 
-    </td>
-  </tr>
-</table>
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/syedhabibahmadg/chatbot-ai.git
+   cd chatbot-ai
+   ```
 
-<hr>
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=next.js" />
-  <img src="https://img.shields.io/badge/AI-Driven-0EA5E9?style=flat-square" />
-  <img src="https://img.shields.io/badge/Startup-Ready-22C55E?style=flat-square" />
-</p>
+3. Configure your environment variables:
+   ```bash
+   cp .env.example .env
+   ```
 
-<p align="center">
-  <b>Building modern AI products and dashboards for the future.</b>
-</p>
+4. Update the `.env` file with your values:
+   ```env
+   APP_URL="http://localhost:3000"
+
+   DATABASE_URL="mysql://root:root@127.0.0.1:3306/testauth"
+   SECRET="your-secret-key"
+
+   GOOGLE_ID="your-google-id"
+   GOOGLE_SECRET="your-google-secret"
+   FACEBOOK_CLIENT_ID="your-facebook-client-id"
+   FACEBOOK_CLIENT_SECRET="your-facebook-client-secret"
+
+   EMAIL_USERNAME="your-email-username"
+   EMAIL_FROM="your-email-from"
+   EMAIL_PASSWORD="your-email-password"
+   ```
+
+5. Set up the database schema:
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+6. Run the application:
+   ```bash
+   npm run dev
+   ```
+
+7. Open:
+   ```bash
+   http://localhost:3000
+   ```
+
+## Available Scripts
+
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+npm run prisma:ui
+```
+
+## Authentication and Authorization
+
+The project uses NextAuth with a Prisma adapter and includes:
+
+- Credentials-based authentication
+- Google and Facebook provider login
+- JWT session strategy
+- Role-based user access
+- Email verification for credential users
+- Protected admin and dashboard flows
+
+## AI and OCR Capabilities
+
+This project includes a chatbot interface with Gemini integration and supports image uploads for OCR processing. Uploaded images can be converted to text with Tesseract.js before being sent to the AI model for analysis.
+
+## Screenshots
+
+![Project preview](./readme.gif)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
